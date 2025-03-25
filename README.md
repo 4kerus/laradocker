@@ -65,3 +65,13 @@ docker compose down
 - После установки доступ к приложению можно получить по адресу `http://localhost`.
 - Для работы с Artisan используйте `docker compose exec php php artisan <command>`.
 - Для работы с Npm используйте `docker compose run --rm node npm <command>`.
+- 
+```sh
+    server: {
+        host: '0.0.0.0',
+        port: 5173,
+        hmr: {
+            host: 'localhost',
+        }
+    },
+```
